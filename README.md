@@ -4,7 +4,7 @@
 
 ## Work experience & education
 
-[LinkedIn](https://www.linkedin.com/in/fmiddernacht/)
+[Frederik Middernacht](https://www.linkedin.com/in/fmiddernacht/)
 
 ## Projects
 
