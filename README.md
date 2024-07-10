@@ -4,7 +4,9 @@
 
 ## Work experience & education
 
-[Frederik Middernacht](https://www.linkedin.com/in/fmiddernacht/)
+[Frederik Middernacht - LinkedIn](https://www.linkedin.com/in/fmiddernacht/)
+[Avantaga - Website](https://www.avantaga.com/)
+[Avantaga - LinkedIn](https://www.linkedin.com/company/avantaga/posts/)
 
 ## Projects
 
