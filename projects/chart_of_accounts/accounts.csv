@@ -1,0 +1,174 @@
+﻿statement,class,account_id,account_number,account_name,area,account_level,account_type,parent_account,formula,dimension
+PL,IN,A00001,701010,sales_products,OT,1,regular_account,901000,,account
+PL,IN,A00002,702010,sales_staffing,OT,1,regular_account,901000,,account
+PL,IN,A00003,702020,sales_customization,OT,1,regular_account,901000,,account
+PL,IN,A00004,702030,sales_training,OT,1,regular_account,901000,,account
+PL,IN,A00005,708000,discounts_rebates_given,OT,1,regular_account,901000,,account
+PL,IN,A00006,901000,turnover,OT,3,calculation_account,903000,turnover = sales_products + sales_staffing + sales_customization + sales_training + discounts_rebates_given,account
+PL,EX,A00007,601200,products_purchased,OT,1,regular_account,902000,,account
+PL,EX,A00008,602200,services_purchased,OT,1,regular_account,902000,,account
+PL,EX,A00009,902000,cost_of_sales,OT,3,calculation_account,903000,cost_of_sales = products_purchased + services_purchased,account
+PL,IN,A00010,903000,gross_profit,OT,3,calculation_account,907000,gross_profit = turnover - cost_of_sales,account
+PL,EX,A00011,610000,other_office_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00012,610100,rent_lease_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00013,610200,home_office_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00014,610300,utilities_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00015,610400,repairs_maintenance_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00016,610500,furniture_equipment_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00017,610600,office_supplies_expenses,OF,1,regular_account,904000,,account
+PL,EX,A00018,611000,other_management_expenses,MG,1,regular_account,904000,,account
+PL,EX,A00019,612000,other_human_resources_expenses,HR,1,regular_account,904000,,account
+PL,EX,A00020,612100,recruitment_expenses,HR,1,regular_account,904000,,account
+PL,EX,A00021,612200,training_education_expenses,HR,1,regular_account,904000,,account
+PL,EX,A00022,613000,other_finance_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00023,613100,accounting_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00024,613200,legal_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00025,613300,business_licensing_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00026,613400,business_insurance_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00027,614000,other_it_expenses,FI,1,regular_account,904000,,account
+PL,EX,A00028,614100,infrastructure_services_expenses,IT,1,regular_account,904000,,account
+PL,EX,A00029,614200,internet_communications_expenses,IT,1,regular_account,904000,,account
+PL,EX,A00030,614300,software_expenses,IT,1,regular_account,904000,,account
+PL,EX,A00031,615000,other_procurement_expenses,SU,1,regular_account,904000,,account
+PL,EX,A00032,616000,other_marketing_expenses,MA,1,regular_account,904000,,account
+PL,EX,A00033,616100,marketing_advertising_expenses,MA,1,regular_account,904000,,account
+PL,EX,A00034,617000,other_sales_expenses,SA,1,regular_account,904000,,account
+PL,EX,A00035,618000,other_general_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00036,618100,professional_services_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00037,618200,memberships_events_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00038,618300,entertainment_gifts_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00039,618400,business_meals_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00040,618500,travel_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00041,618600,transportation_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00042,618700,vehicle_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00043,618800,equipment_rental_expenses,OT,1,regular_account,904000,,account
+PL,EX,A00044,904000,general_expenses,OT,2,calculation_account,906000,general_expenses = other_office_expenses + rent_lease_expenses + home_office_expenses + utilities_expenses + repairs_maintenance_expenses + furniture_equipment_expenses + office_supplies_expenses + other_management_expenses + other_human_resources_expenses + recruitment_expenses + training_education_expenses + other_finance_expenses + accounting_expenses + legal_expenses + business_licensing_expenses + business_insurance_expenses + other_it_expenses + infrastructure_services_expenses + internet_communications_expenses + software_expenses + other_procurement_expenses + other_marketing_expenses + marketing_advertising_expenses + other_sales_expenses + other_general_expenses + professional_services_expenses + memberships_events_expenses + entertainment_gifts_expenses + business_meals_expenses + travel_expenses + transportation_expenses + vehicle_expenses + equipment_rental_expenses,account
+PL,EX,A00045,619100,independent_contractors_expenses,OT,1,regular_account,905000,,account
+PL,EX,A00046,619200,hired_temporary_staff_expenses,OT,1,regular_account,905000,,account
+PL,EX,A00047,619300,remuneration_expenses_directors,OT,1,regular_account,905000,,account
+PL,EX,A00048,620000,remuneration_expenses_employees,OT,1,regular_account,905000,,account
+PL,EX,A00049,621000,social_security_expenses_employees,OT,1,regular_account,905000,,account
+PL,EX,A00050,622000,other_statutory_employee_expenses,OT,1,regular_account,905000,,account
+PL,EX,A00051,622100,employee_benefits_expenses,OT,1,regular_account,905000,,account
+PL,EX,A00052,623000,other_personnel_expenses,OT,1,regular_account,905000,,account
+PL,EX,A00053,905000,personnel_expenses,OT,2,calculation_account,906000,personnel_expenses = independent_contractors_expenses + hired_temporary_staff_expenses + remuneration_expenses_directors + remuneration_expenses_employees + social_security_expenses_employees + other_statutory_employee_expenses + employee_benefits_expenses + other_personnel_expenses + operating_expenses,account
+PL,EX,A00054,906000,operating_expenses,OT,3,calculation_account,907000,operating_expenses =  general_expenses + personnel_expenses,account
+PL,IN,A00055,907000,ebitda,OT,3,calculation_account,911000,ebitda = gross_profit + general_expenses + personnel_expenses,account
+PL,EX,A00056,630000,depreciation_expenses,OT,1,regular_account,908000,,account
+PL,EX,A00057,630100,amortization_expenses,OT,1,regular_account,908000,,account
+PL,EX,A00058,633000,bad_debt_expenses,OT,1,regular_account,908000,,account
+PL,EX,A00059,908000,depreciation_amortization_expenses,OT,3,calculation_account,911000,depreciation_amortization_expenses = depreciation_expenses + amortization_expenses + bad_debt_expenses,account
+PL,IN,A00060,743000,exceptional_operating_income,OT,1,regular_account,909000,,account
+PL,EX,A00061,643000,exceptional_operating_expenses,OT,1,regular_account,909000,,account
+PL,EX,A00062,909000,exceptional_income_expense,OT,3,calculation_account,911000,exceptional_income_expense = exceptional_operating_income + exceptional_operating_expenses,account
+PL,IN,A00063,757000,other_financial_income,OT,1,regular_account,910000,,account
+PL,EX,A00064,657000,other_financial_expenses,OT,1,regular_account,910000,,account
+PL,EX,A00065,910000,financial_income_expense,OT,3,calculation_account,911000,financial_income_expense = other_financial_income +other_financial_expenses,account
+PL,IN,A00066,911000,net_income_before_taxes,OT,3,calculation_account,913000,net_income_before_taxes = ebitda + depreciation + exceptional_income_expense + financial_income_expense,account
+PL,EX,A00067,670000,domestic_income_tax_expenses_current_period,OT,1,regular_account,912000,,account
+PL,EX,A00068,912000,taxes,OT,3,calculation_account,913000,taxes = domestic_income_tax_expenses_current_period,account
+PL,IN,A00069,913000,net_income,OT,3,calculation_account,999999,net_income = net_income_before_taxes + taxes,account
+BS,AS,A00070,200000,capitalized_formation_expenses,OT,1,regular_account,921000,,account
+BS,AS,A00071,200090,capitalized_formation_expenses_accumulated_depreciation,OT,1,regular_account,921000,,account
+BS,AS,A00072,210000,capitalized_research_development_expenses,OT,1,regular_account,921000,,account
+BS,AS,A00073,921000,intangible_fixed_assets,OT,2,calculation_account,924000,intangible_fixed_assets = capitalized_formation_expenses + capitalized_formation_expenses_accumulated_depreciation + capitalized_research_development_expenses,account
+BS,AS,A00074,230000,plant_equipment,OT,1,regular_account,922000,,account
+BS,AS,A00075,230090,plant_equipment_accumulated_depreciation,OT,1,regular_account,922000,,account
+BS,AS,A00076,240000,furniture_vehicles,OT,1,regular_account,922000,,account
+BS,AS,A00077,260000,other_tangible_fixed_assets,OT,1,regular_account,922000,,account
+BS,AS,A00078,922000,tangible_fixed_assets,OT,2,calculation_account,924000,tangible_fixed_assets = plant_equipment + plant_equipment_accumulated_depreciation + furniture_vehicles + other_tangible_fixed_assets,account
+BS,AS,A00079,285000,other_long_term_financial_receivables,OT,1,regular_account,923000,,account
+BS,AS,A00080,291000,other_long_term_receivables,OT,1,regular_account,923000,,account
+BS,AS,A00081,923000,financial_assets,OT,2,calculation_account,924000,financial_assets = other_long_term_financial_receivables + other_long_term_receivables,account
+BS,AS,A00082,924000,fixed_assets,OT,3,calculation_account,931000,fixed_assets = intangible_fixed_assets + tangible_fixed_assets  + financial_assets,account
+BS,AS,A00083,310000,inventory_products,OT,1,regular_account,925000,,account
+BS,AS,A00084,360000,advance_payments_inventory_purchases,OT,1,regular_account,925000,,account
+BS,AS,A00085,369000,inventory_writtedowns,OT,1,regular_account,925000,,account
+BS,AS,A00086,925000,inventory,OT,3,calculation_account,931000,inventory = inventory_products + advance_payments_inventory_purchases + inventory_writtedowns,account
+BS,AS,A00087,400000,accounts_receivable,OT,1,regular_account,926000,,account
+BS,AS,A00088,404000,income_receivables,OT,1,regular_account,926000,,account
+BS,AS,A00089,406000,advance_payments,OT,1,regular_account,926000,,account
+BS,AS,A00090,407000,doubtful_receivables,OT,1,regular_account,926000,,account
+BS,AS,A00091,409000,writtedowns_accounts_receivable,OT,1,regular_account,926000,,account
+BS,AS,A00092,410000,other_receivables,OT,1,regular_account,926000,,account
+BS,AS,A00093,411000,vat_receivables,OT,1,regular_account,926000,,account
+BS,AS,A00094,419000,writtedowns_other_receivables,OT,1,regular_account,926000,,account
+BS,AS,A00095,926000,short_term_receivables,OT,3,calculation_account,931000,short_term_receivables = accounts_receivable + income_receivables + advance_payments + doubtful_receivables + writtedowns_accounts_receivable + other_receivables + vat_receivables + writtedowns_other_receivables,account
+BS,AS,A00096,490000,deferred_expenses,OT,1,regular_account,927000,,account
+BS,AS,A00097,491000,accrued_income,OT,1,regular_account,927000,,account
+BS,AS,A00098,927000,regulation_assets,OT,3,calculation_account,931000,regulation_assets = deferred_expenses + accrued_income,account
+BS,AS,A00099,520000,fixed_income_securities,OT,1,regular_account,928000,,account
+BS,AS,A00100,530000,term_deposits,OT,1,regular_account,928000,,account
+BS,AS,A00101,928000,short_term_investments,OT,2,calculation_account,930000,short_term_investments =  fixed_income_securities + term_deposits,account
+BS,AS,A00102,550000,cash_at_banks,OT,1,regular_account,929000,,account
+BS,AS,A00103,550100,current_account_bank_of_america,OT,1,regular_account,929000,,account
+BS,AS,A00104,550200,current_account_kbc_bank,OT,1,regular_account,929000,,account
+BS,AS,A00105,570000,banknotes_coins,OT,1,regular_account,929000,,account
+BS,AS,A00106,580000,internal_fund_transfers,OT,1,regular_account,929000,,account
+BS,AS,A00107,929000,cash,OT,2,calculation_account,930000,cash = cash_at_banks + current_account_bank_of_america + current_account_kbc_bank + cash + internal_fund_transfers,account
+BS,AS,A00108,930000,cash_equivalents,OT,3,calculation_account,931000,cash_equivalents = short_term_investments + cash,account
+BS,AS,A00109,931000,assets,OT,4,calculation_account,950000,assets = fixed_assets + inventory + short_term_receivables + regulation_assets + cash_equivalents,account
+BS,LI,A00110,100000,issued_capital,OT,1,regular_account,941000,,account
+BS,LI,A00111,941000,capital,OT,2,calculation_account,944000,capital = issued_capital,account
+BS,LI,A00112,130000,legal_reserves,OT,1,regular_account,942000,,account
+BS,LI,A00113,132000,untaxed_reserves,OT,1,regular_account,942000,,account
+BS,LI,A00114,133000,available_reserves,OT,1,regular_account,942000,,account
+BS,LI,A00115,140000,profit_loss_brought_forward,OT,1,regular_account,942000,,account
+BS,LI,A00116,942000,accumulated_results,OT,2,calculation_account,944000,accumulated_results = legal_reserves + untaxed_reserves + available_reserves + profit_loss_brought_forward,account
+BS,LI,A00117,161000,provisions_taxes,OT,1,regular_account,943000,,account
+BS,LI,A00118,164000,provisions_other_liabilities,OT,1,regular_account,943000,,account
+BS,LI,A00119,168000,deferred_taxes,OT,1,regular_account,943000,,account
+BS,LI,A00120,943000,provision_risk_charges,OT,2,calculation_account,944000,provision_risk_charges = provisions_taxes + provisions_other_liabilities + deferred_taxes,account
+BS,LI,A00121,944000,equity,OT,3,calculation_account,949000,equity = capital + accumulated_results + provision_risk_charges,account
+BS,LI,A00122,170000,long_term_subordinated_loans,OT,1,regular_account,945000,,account
+BS,LI,A00123,173000,long_term_loans_from_banks,OT,1,regular_account,945000,,account
+BS,LI,A00124,174000,other_long_term_loans,OT,1,regular_account,945000,,account
+BS,LI,A00125,175000,long_term_trade_receivables,OT,1,regular_account,945000,,account
+BS,LI,A00126,179000,other_long_term_payables,OT,1,regular_account,945000,,account
+BS,LI,A00127,945000,long_term_debts,OT,2,calculation_account,948000,long_term_debts = long_term_subordinated_loans + long_term_loans_from_banks + other_long_term_loans + long_term_trade_receivables + other_long_term_payables,account
+BS,LI,A00128,420000,current_portion_long_term_debt,OT,1,regular_account,946000,,account
+BS,LI,A00129,430000,short_term_loans_from_banks,OT,1,regular_account,946000,,account
+BS,LI,A00130,433000,bank_current_accounts_payables,OT,1,regular_account,946000,,account
+BS,LI,A00131,439000,other_short_term_loans,OT,1,regular_account,946000,,account
+BS,LI,A00132,440000,accounts_payable,OT,1,regular_account,946000,,account
+BS,LI,A00133,444000,invoices_to_be_received,OT,1,regular_account,946000,,account
+BS,LI,A00134,450000,estimated_taxes_payable,OT,1,regular_account,946000,,account
+BS,LI,A00135,451000,vat_payables,OT,1,regular_account,946000,,account
+BS,LI,A00136,452000,withholding_tax_payables,OT,1,regular_account,946000,,account
+BS,LI,A00137,453000,other_tax_payables,OT,1,regular_account,946000,,account
+BS,LI,A00138,454000,social_security_payables,OT,1,regular_account,946000,,account
+BS,LI,A00139,455000,remuneration_payables,OT,1,regular_account,946000,,account
+BS,LI,A00140,456000,holiday_pay_payables,OT,1,regular_account,946000,,account
+BS,LI,A00141,459000,other_social_obligations,OT,1,regular_account,946000,,account
+BS,LI,A00142,460000,advance_payments_contracts_in_progress,OT,1,regular_account,946000,,account
+BS,LI,A00143,480000,other_short_term_payables,OT,1,regular_account,946000,,account
+BS,LI,A00144,946000,short_term_payables,OT,2,calculation_account,948000,short_term_payables = current_portion_long_term_debt + short_term_loans_from_banks + bank_current_accounts_payables + other_short_term_loans + accounts_payable + invoices_to_be_received + estimated_taxes_payable + vat_payables + withholding_tax_payables + other_tax_payables + social_security_payables + remuneration_payables + holiday_pay_payables + other_social_obligations + advance_payments_contracts_in_progress + other_short_term_payables,account
+BS,LI,A00145,492000,accrued_expenses,OT,1,regular_account,947000,,account
+BS,LI,A00146,493000,deferred_income,OT,1,regular_account,947000,,account
+BS,LI,A00147,947000,regulation_liabilities,OT,2,calculation_account,948000,regulation_liabilities = accrued_expenses + deferred_income,account
+BS,LI,A00148,948000,liabilities,OT,3,calculation_account,949000,liabilities = long_term_debts + short_term_payables + regulation_liabilities,account
+BS,LI,A00149,949000,equity_liabilities,OT,4,calculation_account,950000,equity_liabilities = equity + liabilities,account
+BS,SU,A00150,959000,bs_check,OT,4,calculation_account,999999,bs_check = assets - equity_liabilities,account
+CF,CA,A00151,960000,net_income_after_tax,OT,3,calculation_account,964900,net_income_after_tax = net_income,account
+CF,CA,A00152,961100,depreciation,OT,2,calculation_account,961900,depreciation = depreciation_expenses,account
+CF,CA,A00153,961200,amortization,OT,2,calculation_account,961900,amortization = amortization_expenses,account
+CF,CA,A00154,961300,bad_debt,OT,2,calculation_account,961900,bad_debt = bad_debt_expenses,account
+CF,CA,A00155,961900,depreciation_amortization,OT,3,calculation_account,964900,depreciation_amortization = depreciation + amortization + bad_debt,account
+CF,CA,A00156,962100,change_inventory,OT,2,calculation_account,962900,change_inventory = inventory(t) - inventory(t-1),account
+CF,CA,A00157,962200,change_accounts_receivable ,OT,2,calculation_account,962900,change_accounts_receivable  = accounts_receivable(t) - accounts_receivable(t-1),account
+CF,CA,A00158,962300,change_other_current_assets,OT,2,calculation_account,962900,change_other_current_assets = other_current_assets(t) - other_current_assets(t-1),account
+CF,CA,A00159,962900,change_current_assets,OT,3,calculation_account,964900,change_current_assets = change_inventory + change_accounts_receivable + change_other_current_assets,account
+CF,CA,A00160,963100,change_accounts_payable,OT,2,calculation_account,963900,change_accounts_payable = accounts_payable(t) - accounts_payable(t-1),account
+CF,CA,A00161,963200,change_deferred_income,OT,2,calculation_account,963900,change_deferred_income = deferred_income(t) - deferred_income(t-1),account
+CF,CA,A00162,963300,change_other_current_liabilities,OT,2,calculation_account,963900,change_other_current_liabilities = other_current_liabilities(t) - other_current_liabilities(t-1),account
+CF,CA,A00163,963900,change_current_liabilities,OT,3,calculation_account,964900,change_current_liabilities = change_accounts_payable + change_deferred_income + change_other_current_liabilities,account
+CF,CA,A00164,964900,cash_flow_from_operations,OT,4,calculation_account,967900,cash_flow_from_operations = net_income_after_tax + depreciation_amortization - change_current_assets + change_current_liabilities,account
+CF,CA,A00165,965100,change_fixed_assets,OT,3,calculation_account,965900,change_fixed_assets = fixed_assets(t) - fixed_assets(t-1),account
+CF,CA,A00166,965900,cash_flow_from_investing,OT,4,calculation_account,967900,cash_flow_from_investing = - change_fixed_assets,account
+CF,CA,A00167,966100,change_long_term_debts,OT,3,calculation_account,966900,change_long_term_debts = long_term_debts(t) - long_term_debts(t-1),account
+CF,CA,A00168,966200,change_short_term_payables,OT,3,calculation_account,966900,change_short_term_payables = short_term_payables(t) - short_term_payables(t-1),account
+CF,CA,A00169,966300,change_other_financing,OT,3,calculation_account,966900,change_other_financing = other_financing(t) - other_financing(t-1),account
+CF,CA,A00170,966900,cash_flow_from_financing,OT,4,calculation_account,967900,cash_flow_from_financing = change_long_term_debts + change_short_term_payables + change_other_financing,account
+CF,CA,A00171,967900,cash_flow,OT,5,calculation_account,969900,cash_flow = cash(t-1),account
+CF,CA,A00172,968900,beginning_cash_balance,OT,5,calculation_account,969900,beginning_cash_balance = cash_flow_from_operations + cash_flow_from_investing + cash_flow_from_financing,account
+CF,CA,A00173,969900,ending_cash_balance,OT,5,calculation_account,999999,ending_cash_balance = beginning_cash_balance + cash_flow,account
