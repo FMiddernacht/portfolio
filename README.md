@@ -14,8 +14,6 @@
 
 ### Chart of accounts
 
-[Accounts](https://1drv.ms/x/s!Aqgqpe28ZPGxiNYuVSxymiuWOsJKww?e=RGvJR4})
-
 ### KPIs
 
 ### Financial analysis
