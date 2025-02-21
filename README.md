@@ -1,4 +1,4 @@
-![Avantaga](/assets/img/logo.png)
+![Avantaga](/assets/img/logo_avantaga.png)
 
 # Portfolio
 
