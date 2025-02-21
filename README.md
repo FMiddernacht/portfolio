@@ -14,6 +14,10 @@
 
 ### Chart of accounts
 
+### Dimensions
+
+### Data storage and model
+
 ### KPIs
 
 ### Financial analysis
